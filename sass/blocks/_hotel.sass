@@ -23,6 +23,13 @@
         font-size: 12px
         line-height: 15px
         margin: 0
+    &-grid
+        display: flex
+        justify-content: space-between
+    &-right
+        display: flex
+        flex-direction: column
+        justify-content: space-between
 .stars
     flex-basis: 100%
 .offer
@@ -83,3 +90,79 @@
         &--prev
             left: 16px
             background-image: url(../img/arrow-left.svg)
+.booking
+    font-family: "Nunito", sans-serif
+    background: $dark
+    color: $light
+    border-radius: 8px
+    width: 350px
+    min-height: 210px
+    padding: 27px
+    &__info
+        display: flex
+        justify-content: space-between
+        margin-bottom: 9px
+    &__price
+        display: flex
+        flex-direction: column
+    &__start
+        font-weight: 400
+        font-size: 10px
+        line-height: 14px
+    &__pricetag
+        font-weight: 800
+        font-size: 24px
+        line-height: 33px
+    &__per-room
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+    &__room
+        margin-top: 4px
+    &__text
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 8px
+        font-style: normal
+        font-weight: 400
+        font-size: 12px
+        line-height: 16px
+    &__description
+        margin-left: 9px
+    &__call-center
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 17px
+    &__calltext
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+    &__number
+        display: flex
+        justify-content: space-between
+        align-items: center
+        color: inherit
+        text-decoration: none
+    &__num
+        margin-left: 8px
+        font-weight: 600
+        font-size: 18px
+        line-height: 25px
+    &__button
+        min-height: 45px
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+        width: 100%
+        border-radius: 4px
+        background-color: $primary
+        border: none
+        color: $light
+        cursor: pointer
+.map
+    width: 347px
+    height: 213px
+    background-color: #000
+    border-radius: 4px
