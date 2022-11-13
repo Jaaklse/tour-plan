@@ -891,6 +891,16 @@ template {
   .newsletter__title {
     margin-bottom: 37px;
   }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+  }
   .subscribe {
     width: 100%;
   }
