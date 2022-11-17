@@ -1,7 +1,7 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
-    .slider
+    .hotel-slider
         width: 590px
     .swiper
         &-slide
@@ -37,13 +37,23 @@
             margin-bottom: 30px
         &-right
             flex-direction: row
-    .slider
-        width: 100%
+        &-slider
+            width: 100%
     .booking
         width: 340px
     .map
         width: 340px
-
+    .reviews
+        &-title
+            margin-bottom: 50px
+            font-weight: 700
+            font-size: 30px
+            line-height: 38px
+            text-align: center
+            text-transform: uppercase
+        &-slider
+            &__item
+                max-width: 580px
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -85,8 +95,8 @@
             &__offer
                 order: -1
                 margin-left: 0
-    .slider
-        height: 350px
+            &-slider
+                height: 350px
     .hotel
         &-right
             flex-direction: column
@@ -101,12 +111,28 @@
             max-width: 576px
             width: 92%
             align-items: flex-start
+    .reviews
+        &-slider
+            &__item
+                padding: 0 30px 30px
+                &:after, &:before
+                    display: none
+            &__button
+                top: 32px
+                &--prev
+                    left: 50%
+                    transform: translate(-50%, 0)
+                    margin-left: -65px
+                &--next
+                    right: 50%
+                    margin-right: -65px
+                    transform: translate(50%, 0)
 @media (max-width: 576px)
     .logo
         width: 99px
-    .slider
-        height: 250px
     .hotel
+        &-slider
+            height: 250px
         &__slider
             margin-bottom: 20px
     .newsletter
@@ -123,3 +149,11 @@
                 line-height: 38px
     .subscribe
         width: 100%
+    .reviews
+        &-title
+            font-weight: 700
+            font-size: 18px
+            line-height: 23px
+            text-align: center
+            text-transform: uppercase
+            margin-bottom: 42px
