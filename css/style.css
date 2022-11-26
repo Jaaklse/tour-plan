@@ -925,6 +925,140 @@ template {
   cursor: pointer;
 }
 
+.packages {
+  padding: 40px 165px 70px 165px;
+}
+.packages-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 65px;
+}
+.packages-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 500px);
+  grid-template-columns: repeat(3, 350px);
+  row-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.packages__item {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.packages__item:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  flex-direction: row;
+}
+.packages__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.packages__image--big {
+  width: 366px;
+  height: 500px;
+  border-radius: 8px 0px 0px 8px;
+}
+.packages__image--basic {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px 8px 0px 0px;
+}
+.packages-imagewrap {
+  position: relative;
+}
+.packages__offer {
+  position: absolute;
+  padding: 8px 12px;
+  top: 26px;
+  left: 0;
+  z-index: 99;
+  border-radius: 0px 4px 4px 0px;
+}
+.packages-info {
+  background-color: #0A223D;
+  color: #fff;
+}
+.packages-info--big {
+  padding: 47px 21px 30px 46px;
+  border-radius: 0px 8px 8px 0px;
+  max-width: 364px;
+  max-height: 500px;
+}
+.packages-info--basic {
+  padding: 30px 21px 25px 32px;
+  border-radius: 0px 0px 8px 8px;
+  max-width: 350px;
+  max-height: 250px;
+}
+.packages-info__stars {
+  margin-bottom: 6px;
+}
+.packages-info__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+}
+.packages-info__text {
+  margin: 0;
+  margin-bottom: 34px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+.packages-info__room--big {
+  margin-bottom: 37px;
+}
+.packages-info__room--basic {
+  margin-bottom: 24px;
+}
+.packages-info__prop {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.packages__description {
+  margin-left: 17px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+.packages-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.packages-price--new {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.packages-price__button {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 11px 27px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+}
+.packages__oldprice {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
