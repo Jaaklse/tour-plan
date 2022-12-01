@@ -1002,6 +1002,9 @@ template {
 .packages-info__stars {
   margin-bottom: 6px;
 }
+.packages-info__stars--basic {
+  display: none;
+}
 .packages-info__title {
   margin: 0;
   margin-bottom: 27px;
@@ -1084,9 +1087,6 @@ template {
   }
   .packages-wrapper {
     grid-gap: 25px;
-  }
-  .packages-info__stars--basic {
-    display: none;
   }
 }
 @media (max-width: 992px) {
