@@ -287,6 +287,10 @@
                 font-size: 9px
 @media (max-width: 409px)
     .packages
+        &__item:nth-child(1)
+            grid-column-start: 1
+            grid-column-end: 5
+            flex-direction: column
         &__item:nth-child(3)
             display: none
         &__item:nth-child(5)

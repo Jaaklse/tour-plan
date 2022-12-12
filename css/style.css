@@ -1417,6 +1417,11 @@ template {
   }
 }
 @media (max-width: 409px) {
+  .packages__item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    flex-direction: column;
+  }
   .packages__item:nth-child(3) {
     display: none;
   }
