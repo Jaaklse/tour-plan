@@ -15,6 +15,9 @@
     .packages
         &-wrapper
             grid-gap: 25px
+    .footer
+        &__input
+            flex-basis: 100%
 @media (max-width: 992px)
     .container, .newsletter-wrapper
         max-width: 700px
@@ -101,6 +104,40 @@
                 padding: 11px 14px
         &__oldprice
             font-size: 14px
+    .footer
+        &-wrapper
+            grid-template-columns: repeat(6, 1fr)
+            grid-gap: 40px
+        &__logo
+            grid-row: 1 / 2
+            grid-column: span 2
+        &__social
+            &-network
+                grid-row: 1 / 2
+                grid-column: span 4
+                align-self: center
+        &__categories
+            grid-row: 2 / 3
+            grid-column: span 2
+        &__aditional
+            grid-column: span 2
+        &__legal
+            grid-column: span 2
+        &__contact
+            &-details
+                grid-row: 3
+                grid-column: span 5
+            &-form
+                flex-wrap: nowrap
+                grid-row: 4
+                grid-column: span 5
+        &__input
+            flex-basis: 47%
+        &__disclaimer
+            grid-column: 1
+        &__image
+            grid-column: span 2
+            grid-column-end: 7
 @media (max-width: 768px)
     .container
         max-width: 576px
@@ -280,6 +317,42 @@
         &__item:nth-child(5)
             grid-column-start: 3
             grid-column-end: 5
+    .footer
+        &-wrapper
+            grid-template-columns: 1fr
+        &__logo
+            grid-row: 1
+            grid-column: 1
+        &__social
+            &-network
+                grid-row: 2
+                grid-column: 1
+        &__aditional
+            grid-row: 3
+            grid-column: 1
+        &__categories
+            grid-row: 4
+            grid-column: 1
+        &__legal
+            grid-row: 5
+            grid-column: 1
+        &__contact
+            &-details
+                grid-row: 6
+                grid-column: 1
+            &-form
+                grid-row: 7
+                grid-column: 1
+        &__input
+            flex-basis: 100%
+        &__disclaimer
+            grid-row: 8
+            grid-column: 1
+            justify-self: start
+        &__image
+            grid-row: 9
+            grid-column: 1
+            justify-self: start
 @media (max-width: 476px)
     .packages
         &-info
